@@ -1,0 +1,36 @@
+
+<!---MAIN TEMPLATE-->
+<main class="clearfix contain">
+    <div class="container">
+        <div class="page-content">
+           
+           <h1>Contact Us</h1>
+            <form method="POST">
+                <fieldset>
+                    <div class="form-left clearfix">
+                        <div class="form-box">
+                            <input type="text" name="name" placeholder="name" id="name">
+                        </div>
+                        <div class="form-box">
+                            <input type="email" name="email" placeholder="email" id="email">
+                        </div>
+                        <div class="form-box">
+                            <input type="text" name="subject" placeholder="subject" id="subject">
+                        </div>
+                    </div>
+                    <div class="form-right clearfix">
+                        <div class="form-box">
+                            <textarea rows="9" cols="50" name="message" form="userform" placeholder="message" id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-box submit">
+                        <input type="submit" name="insert" value="SEND" id="submit">
+                    </div>
+                </fieldset>
+            </form>
+            <div class="feedback"></div>
+            
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="./js/handleForm.js"></script>

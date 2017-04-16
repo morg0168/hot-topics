@@ -1,0 +1,449 @@
+@import url(../font-awesome/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,700");
+
+/* Perishable Clearfix: use on any parent with floating children */
+.clearfix:after,
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix,
+* html .row {
+    zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .clearfix,
+*:first-child + html .row {
+    zoom: 1;
+}
+
+/* IE7 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow: scroll;
+}
+
+body {
+    text-align: center;
+    font-family: 'Conv_CircularStd-Book', 'Helvetica', Sans-Serif;
+    font-weight: 300;
+    font-size: 0.618rem;
+    line-height: 1.4;
+    background-color: rgba(255, 233, 226, 0.1);
+    border: 4px solid #1500FF;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow: scroll;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contain {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container {
+    min-height: 50vh;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo {
+    background-color: transparent;
+    color: #1500FF;
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+}
+
+header nav {
+    top: 0;
+    width: 100%;
+    line-height: 2.5rem;
+    color: rgba(255, 255, 255, 0.87);
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header nav ul {
+    margin: 0 auto;
+}
+
+header nav ul li {
+    background-color: #1500FF;
+    margin-top: 2.5%;
+    border-radius: 2px;
+}
+
+header a {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #525252;
+    color: white;
+    cursor: pointer;
+    transition: none;
+    letter-spacing: 3px;
+    font-weight: 800;
+    padding: 10px auto 10px auto;
+}
+
+header a:hover {
+    color: #FFE9E2;
+}
+
+.masthead {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    background: url("../img/hot-topic-plants.png") no-repeat center center;
+    background-size: 100%;
+    text-align: center;
+}
+
+.masthead .masthead-title-contain {
+    text-align: center;
+    width: 80vw;
+    height: 50%;
+    top: 35%;
+    position: relative;
+    margin: 0 auto;
+    color: #FFE9E2;
+}
+
+.masthead .masthead-title-contain h1 {
+    vertical-align: middle;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 100%;
+    font-size: 2.5rem;
+}
+
+main {
+    text-align: left;
+    padding: 10px 0 30px 0;
+}
+
+main h1 {
+    color: #1500FF;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 800;
+    padding: 0 0 10px 0;
+}
+
+main h1:first-child {
+    padding-top: 20px;
+}
+
+main .fig-img-contain {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main figcaption {
+    color: #1500FF;
+    font-size: 0.6rem;
+}
+
+  main .article-1,
+  main .article-2,
+  main .article-3 {
+    padding: 10px 0;
+    color: #1500FF;
+}
+
+footer {
+    background-color: #1500FF;
+}
+
+.social-general {
+    line-height: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.social-general .social-right li {
+    display: inline;
+    width: calc(33%-1rem);
+    margin: 0 0.5rem;
+    background-color: #1500FF;
+}
+.social-general .social-right li a {
+    color: #FFF;
+}
+
+.social-general .social-right li a:hover {
+    color: #FFE9E2;
+}
+
+.social-general .social-left li {
+    width: 100%;
+    display: block;
+    color: #FFF;
+}
+
+form {
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+
+form fieldset {
+    border: none;
+}
+
+form fieldset input,
+form fieldset textarea {
+    margin: 10px auto;
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #1500FF;
+    border-radius: 2px;
+}
+
+form fieldset #submit {
+    background-color: #FFE9E2;
+    border: 2px solid #1500FF;
+    color: #1500FF;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 2px;
+}
+
+form fieldset #submit:hover {
+    cursor: pointer;
+    background: #1500FF;
+    color: #FFF;
+    border: 2px solid #1500FF;
+}
+
+.feedback {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.feedback p,
+.feedback ul,
+.feedback li {
+    color: #1500FF;
+    text-align: center;
+}
+
+/* -- MEDIA QUERIES -- */
+@media screen and (min-width: 35rem) {
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+    
+    nav ul .home {
+        width: calc(50% - 2.5%);
+        float: left;
+        margin: 0 auto;
+    }
+    
+    nav ul .contact {
+        width: calc(50% - 2.5%);
+        float: right;
+        margin: 0 auto;
+    }
+    
+    nav ul .logo {
+        width: 100%;
+        float: none;
+    }
+
+  .masthead .masthead-title-contain h1 {
+      font-size: 2.5rem;
+    }
+
+  main h1 {
+      font-size: 1.5rem;
+    }
+
+  .fig-img-contain {
+      width: calc(40% - 1rem);
+      float: left;
+      padding-right: 1rem !important;
+      padding-bottom: 0 !important;
+      padding-left: 0;
+    }
+
+  figcaption {
+      text-align: left;
+    }
+
+  form {
+      text-align: center;
+    }
+    
+    form fieldset {
+        border: none;
+    }
+    
+    form fieldset input,
+    form fieldset textarea {
+        margin: 10px auto;
+        padding: 10px;
+        border: 2px solid #1500FF;
+    }
+    
+    form fieldset .form-left {
+        width: calc(30% - 1rem);
+        margin-right: 1rem;
+        float: left;
+        margin-bottom: 10px;
+    }
+    
+    form fieldset .form-right {
+        width: calc(70% - 1rem);
+        float: right;
+        margin-left: 1rem;
+    }
+    
+    form fieldset #submit {
+        display: block;
+    }
+    
+    form fieldset .submit {
+        width: calc(30% - 1rem);
+    }
+}
+
+/*close tablet*/
+@media screen and (min-width: 80rem) {
+    .contain {
+        width: 70vw;
+        margin: 0 auto;
+    }
+    
+    nav {
+        text-align: left;
+        width: 70vw;
+        padding-top: 5%;
+        padding-bottom: 0 !important;
+    }
+    
+    nav ul {
+        text-align: center;
+        width: 60%;
+        float: left;
+    }
+    
+    nav ul li {
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    nav ul .home {
+        width: calc(33.3% - 2.5%) !important;
+        float: left;
+        margin: 0 2.5% 0 0;
+    }
+    
+    nav ul .contact {
+        width: calc(33.3% - 2.5%) !important;
+        float: left;
+        margin: 0 0 0 2.5%;
+    }
+    
+    nav ul .logo {
+        width: calc(33.3% - 2.5%);
+        float: left;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+  .masthead .masthead-title-contain {
+      width: 70vw;
+      height: 50%;
+      text-align: left;
+      top: 35%;
+      left: 0;
+      position: relative;
+      margin: 0 auto;
+      color: #FFE9E2;
+    }
+    .masthead .masthead-title-contain h1 {
+        vertical-align: middle;
+        font-family: 'Cormorant Garamond', serif;
+        max-width: 100%;
+        font-size: 3rem;
+    }
+    
+    main {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    
+    main h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    .article-2 {
+        width: calc(50% - 1rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    .article-3 {
+        width: calc(50% - 1rem);
+        float: left;
+        margin: 0 0 0 1rem;
+    }
+    
+    footer {
+        text-align: left;
+    }
+}
+
